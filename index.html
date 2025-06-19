@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpeakFree</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Quick Navigation</h3>
+    <ul>
+      <li>🏠 Home</li>
+      <li>📚 Categories</li>
+      <li>🕒 Recent Activities</li>
+    </ul>
+    <h3>Community Guidelines</h3>
+    <ul>
+      <li>Be respectful and supportive</li>
+      <li>No personal attacks or bullying</li>
+      <li>Keep posts relevant to high school topics</li>
+      <li>Protect privacy - no personal info</li>
+      <li>Help others and ask for help</li>
+      <li>Report inappropriate content</li>
+    </ul>
+    <h3>Quick Links</h3>
+    <ul>
+      <li>Study Resources</li>
+      <li>College Prep Guide</li>
+      <li>Mental Health Support</li>
+      <li>Academic Calendar</li>
+      <li>Scholarship Opportunities</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="header" style="margin: 60px auto 0; text-align: center; padding: 50px 0; max-width: 1400px;">
+      <h1 style="margin: 0; font-size: 3rem;">🎓 SpeakFree</h1>
+      <p class="caption" style="margin: 5px 0 0; font-size: 1.2rem;">
+        Connect, Share, and Support Each Other Through SpeakFree
+      </p>
+    </div>
+
+    <div class="navigation-boxes">
+      <div id="nav-home" class="nav-box">🏠 Home</div>
+      <div id="nav-browse" class="nav-box">📚 Browse Posts</div>
+      <div class="nav-box">➕ Create Post</div>
+      <div class="nav-box">📊 Dashboard</div>
+      <div class="nav-box">👤 Profile</div>
+      <div class="nav-box">📈 Community Stats</div>
+    </div>
+
+    <div id="home-content">
+      <div class="about-section" style="padding: 20px; margin-bottom: 20px;">
+        <div class="welcome-message">
+          <h1>Welcome to SpeakFree!</h1>
+          <p>A safe space for high school students to connect, share experiences, and support each other. Get advice on academics, college prep, social situations, and more from fellow students who understand what you're going through.</p>
+        </div>
+      </div>
+
+      <!-- Browse Posts Section -->
+      <div id="browse-posts" style="display: none; max-width: 1400px; margin: 0 auto; padding: 10px 20px 0;">
+
+        <!-- Left-Aligned Title -->
+        <h2 style="margin: 0 0 16px; font-size: 2rem; text-align: left;">📚 Browse All Posts</h2>
+
+        <!-- Filter Section -->
+        <div class="browse-filters-wrapper" style="margin-bottom: 10px;">
+          <div class="browse-filters" style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+
+            <!-- Category Filter -->
+            <div class="filter-group" style="flex: 1; min-width: 200px;">
+              <label for="category-filter" style="font-weight: 600;">Filter by Category</label>
+              <select id="category-filter" style="width: 100%; background: #eee; border: 1px solid #ccc; padding: 8px 10px; border-radius: 6px;">
+                <option value="all">All Categories</option>
+                <option value="Academic Advice">Academic Advice</option>
+                <option value="College Prep">College Prep</option>
+                <option value="Extracurricular">Extracurricular</option>
+                <option value="Social Life">Social Life</option>
+                <option value="Mental Health">Mental Health</option>
+                <option value="Career Guidance">Career Guidance</option>
+                <option value="Study Tips">Study Tips</option>
+                <option value="Teacher Relations">Teacher Relations</option>
+                <option value="General Discussion">General Discussion</option>
+              </select>
+            </div>
+
+            <!-- Grade Filter -->
+            <div class="filter-group" style="flex: 1; min-width: 200px;">
+              <label for="grade-filter" style="font-weight: 600;">Filter by Grade</label>
+              <select id="grade-filter" style="width: 100%; background: #eee; border: 1px solid #ccc; padding: 8px 10px; border-radius: 6px;">
+                <option value="all">All Grades</option>
+                <option value="9th Grade">9th Grade</option>
+                <option value="10th Grade">10th Grade</option>
+                <option value="11th Grade">11th Grade</option>
+                <option value="12th Grade">12th Grade</option>
+              </select>
+            </div>
+
+            <!-- Sort Filter -->
+            <div class="filter-group" style="flex: 1; min-width: 200px;">
+              <label for="sort-by" style="font-weight: 600;">Sort by</label>
+              <select id="sort-by" style="width: 100%; background: #eee; border: 1px solid #ccc; padding: 8px 10px; border-radius: 6px;">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="most-liked">Most Liked</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Posts Container (ADDED) -->
+        <div id="posts-container"></div>
+
+      </div>
+
+      <!-- Trending Discussions Section -->
+      <div class="home-posts">
+        <div class="post-box" style="background:#fff; border:1px solid #ddd; padding:20px; margin:15px 0; border-radius:12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+          <h2 style="margin-top:0; color:#333;">Dealing with academic pressure from parents</h2>
+          <p style="color:#555; line-height:1.6;">
+            Lately I've been feeling overwhelmed with school because of the high expectations set by my family.  
+            It feels like no matter how well I do, it's never enough.  
+            Has anyone else gone through this, and how did you cope with it?
+          </p>
+          <div style="margin-top:10px; font-size:14px; color:#666;">
+            <br />
+            <strong>Category:</strong> Mental Health
+          </div>
+          <div style="margin-top:10px; font-size:14px; color:#444;">
+            ❤️ <strong>Likes:</strong> 45 💬 <strong>Replies:</strong> 12
+          </div>
+        </div>
+      </div>
+
+      <!-- Create Post Form -->
+      <div class="actions">
+        <h3>✍️ Create a Post</h3>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" />
+
+        <label for="grade">Grade:</label>
+        <select id="grade" name="grade">
+          <option value="">Select Grade</option>
+          <option value="9th Grade">9th Grade</option>
+          <option value="10th Grade">10th Grade</option>
+          <option value="11th Grade">11th Grade</option>
+          <option value="12th Grade">12th Grade</option>
+        </select>
+
+        <label for="title">Post Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter post title" />
+
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="">Select Category</option>
+          <option value="Academic Advice">Academic Advice</option>
+          <option value="College Prep">College Prep</option>
+          <option value="Extracurricular">Extracurricular</option>
+          <option value="Social Life">Social Life</option>
+          <option value="Mental Health">Mental Health</option>
+          <option value="Career Guidance">Career Guidance</option>
+          <option value="Study Tips">Study Tips</option>
+          <option value="Teacher Relations">Teacher Relations</option>
+          <option value="General Discussion">General Discussion</option>
+        </select>
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="4" placeholder="Share your thoughts, ask questions, or offer advice for fellow students..."></textarea>
+
+        <label for="tags">Tags (comma-separated):</label>
+        <input type="text" id="tags" placeholder="e.g. study tips, college prep, stress management" />
+
+        <button id="post-button">Post</button>
+      </div>
+
+      <!-- Dashboard Section -->
+      <div class="dashboard" style="display: none; padding: 20px;">
+        <h3>📋 Dashboard - Collaborative Topics</h3>
+        <div id="topic-form" style="margin-top: 20px;">
+          <label for="topic-title">Topic Title:</label>
+          <input type="text" id="topic-title" placeholder="Enter topic title" />
+
+          <label for="topic-description">Topic Description:</label>
+          <textarea id="topic-description" placeholder="Enter topic description"></textarea>
+
+          <label for="topic-author">Your Name:</label>
+          <input type="text" id="topic-author" placeholder="Enter your name" />
+
+          <button id="create-topic" style="margin-top: 10px; background-color: #e53935; color: white; padding: 10px 15px; border: none; border-radius: 6px; font-weight: bold;">🚀 Create Topic</button>
+        </div>
+
+        <div id="topic-list" style="margin-top: 30px;">
+          <!-- Topics will appear here -->
+        </div>
+      </div>
+
+      <!-- Profile Section -->
+      <div class="profile" style="display:none;">
+        <h3>Profile</h3>
+        <label for="profile-username">Username:</label>
+        <input type="text" id="profile-username" />
+
+        <label for="profile-grade">Grade:</label>
+        <select id="profile-grade">
+          <option value="">Select grade</option>
+          <option value="9th Grade">9th Grade</option>
+          <option value="10th Grade">10th Grade</option>
+          <option value="11th Grade">11th Grade</option>
+          <option value="12th Grade">12th Grade</option>
+        </select>
+
+        <label for="profile-school">School (optional):</label>
+        <input type="text" id="profile-school" />
+
+        <label for="profile-interests">Interests and Hobbies:</label>
+        <textarea id="profile-interests"></textarea>
+
+        <label for="profile-goals">Academic/Career Goals:</label>
+        <textarea id="profile-goals"></textarea>
+
+        <button id="save-profile" style="margin-top:10px;">Save Profile</button>
+      </div>
+
+      <!-- Community Stats Section -->
+      <div class="community-stats" style="display:none;">
+        <h3>Community Stats</h3>
+        <p>Total Posts: <span id="stat-total-posts">0</span></p>
+        <p>Total Replies: <span id="stat-total-replies">0</span></p>
+        <p>Total Likes: <span id="stat-total-likes">0</span></p>
+        <p>Avg Likes per Post: <span id="stat-avg-likes">0</span></p>
+      </div>
+
+    </div>
+
+    <footer>
+      Speakfree • A safe space for students to connect and grow together<br />
+      <em>Remember: This is a supportive community. Be kind, be helpful, be yourself! 💙</em>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
